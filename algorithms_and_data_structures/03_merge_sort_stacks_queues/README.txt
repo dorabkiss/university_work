@@ -1,20 +1,20 @@
 1 Linked lists (cont’d)
 1.1 Sublist 
-By adding to your existing SLList class, implement a sublist method such that sublist(int start, int end) 
-returns a fresh list whose contents are the elements in positions between start (inclusive) and
-end (exclusive). You may assume that start is less than or equal to end, and that end is less than or equal
-to the length of the list.
-For example, if x represents the three-element list (7 9 14), x.sublist(1,2) should return a fresh
-list (9) and x.sublist(2,2) should return NIL.
+By adding to your existing SLList class, implement a sublist method such that 
+sublist(int start, int end) returns a fresh list whose contents are the elements in 
+positions between start (inclusive) and end (exclusive). You may assume that start is 
+less than or equal to end, and that end is less than or equal to the length of the list.
+For example, if x represents the three-element list (7 9 14), x.sublist(1,2) should 
+return a fresh list (9) and x.sublist(2,2) should return NIL.
 
 1.2 Merge
-By adding to your existing SLList class, implement a merge method such that merge(SLlist b) 
-returns the result of merging the contents of this with b. 
+By adding to your existing SLList class, implement a merge method such that 
+merge(SLlist b) returns the result of merging the contents of this with b.  
 You may assume that the contents of this and b are already sorted in ascending order.
 
 1.3 Merge sort
-By adding to your existing SLList class, implement a mergesort method such that mergesort() 
-returns a list of the sorted contents.
+By adding to your existing SLList class, implement a mergesort method such that 
+mergesort() returns a list of the sorted contents.
 
 2 Stacks and Queues
 2.1 Stacks  
