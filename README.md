@@ -16,9 +16,11 @@ standard data structures and algorithms for manipulating them
 - tries
 
 ## data, networks, and the web (python, mysql)
-- mock twitter application built with flask framework
+twitter-like application built with flask framework
 - jinja template engine
 - wtforms
 - flask-login: user authentication
 - flask-restful: basic api
 - sqlalchemy
+
+for more details, see the readme file in the folder
