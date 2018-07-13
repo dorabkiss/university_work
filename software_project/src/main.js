@@ -11,7 +11,7 @@ Vue.config.productionTip = false
 Vue.use(VModal)
 
 let config = {
-  apiKey: 'AIzaSyAM6m8CYZEqvFOoSFK2YgutsBVvK_srohY',
+  apiKey: 'XXXXXXX',
   authDomain: 'eventar-85053.firebaseapp.com',
   databaseURL: 'https://eventar-85053.firebaseio.com',
   projectId: 'eventar-85053',
