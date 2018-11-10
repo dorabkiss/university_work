@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from pandas.api.types import CategoricalDtype
@@ -116,6 +115,16 @@ def split_data(train_data, test_data):
 def ohe_data(X_train, y_train, X_test, y_test):
     """
     One hot encode categorical columns.
+    Args:
+        X_train: Training features as Pandas DataFrame
+        y_train: Training labels as Pandas Series
+        X_test: Testing features as Pandas DataFrame
+        y_test: Testing labels as Pandas Series
+    Returns:
+        X_train: One hot encoded training features as Pandas DataFrame.
+        y_train: One hot encoded training labels as Pandas Series.
+        X_test: One hot encoded testing features as Pandas DataFrame.
+        y_test: One hot encoded testing labels as Pandas Series.
     
     """
     data = pd.concat([X_train, X_test])
