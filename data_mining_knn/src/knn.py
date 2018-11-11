@@ -16,7 +16,7 @@ def predict(X_train, y_train, X_test, k):
         mostCommon: Predicted label for our data point (0 or 1)
     """
     distances = [0] * len(X_train) # to store Euclidean distances
-    labels = [0] * k # to store k nearest neighbours associated labels
+    labels = [0] * k # to store k nearest neighbour's associated labels
     df_train = X_train.values
     # Go through each item in my training dataset, and calculate the distance from that data item to my specific sample
     for i in range(len(X_train)):
