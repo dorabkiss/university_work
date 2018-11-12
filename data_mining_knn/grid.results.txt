@@ -44,17 +44,19 @@ test data size: 5000
 -----------------------------------
  Value of k: 39	| accuracy: 82.54%
 
-======================================================================
+====================================================================
 
 BEST ACCURACY AT K=37 82.96%
 
-======================================================================
+====================================================================
 
-Value of k: 37, accuracy: 82.96% 
+Value of k: 37, accuracy: 82.96%    
+
 confusion matrix: 
- 		|  true <=50k 	|  true >50k 	|  class precision 
-predicted <=50k	|  3417		|  498		|  87.28%
-predicted >50k	|  354		|  731		|  67.37%
-class recall	|  90.61%	|  59.48%
+
+ 		        |  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3417		    |  498		    |  87.28%
+predicted >50k	|  354		    |  731		    |  67.37%
+class recall	|  90.61%	    |  59.48%
 
 runtime: 0 hours 17 minutes 15.70 seconds
