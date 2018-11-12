@@ -1,0 +1,226 @@
+Results 
+
+Training data size: 10201
+test data size: 5000
+
+======================================================================
+
+Value of k: 1, accuracy: 77.64% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3198		|  545		|  85.44%
+predicted >50k	|  573		|  684		|  54.42%
+class recall	|  84.81%	|  55.66%
+
+runtime: 0 hours 18 minutes 11.95 seconds
+
+======================================================================
+
+Value of k: 3, accuracy: 80.38% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3300		|  510		|  86.61%
+predicted >50k	|  471		|  719		|  60.42%
+class recall	|  87.51%	|  58.50%
+
+runtime: 0 hours 18 minutes 5.73 seconds
+
+======================================================================
+
+Value of k: 5, accuracy: 81.46% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3337		|  493		|  87.13%
+predicted >50k	|  434		|  736		|  62.91%
+class recall	|  88.49%	|  59.89%
+
+runtime: 0 hours 17 minutes 13.59 seconds
+
+======================================================================
+
+Value of k: 7, accuracy: 82.40% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3371		|  480		|  87.54%
+predicted >50k	|  400		|  749		|  65.19%
+class recall	|  89.39%	|  60.94%
+
+runtime: 0 hours 17 minutes 19.44 seconds
+
+======================================================================
+
+Value of k: 9, accuracy: 82.06% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3367		|  493		|  87.23%
+predicted >50k	|  404		|  736		|  64.56%
+class recall	|  89.29%	|  59.89%
+
+runtime: 0 hours 17 minutes 1.69 seconds
+
+======================================================================
+
+Value of k: 11, accuracy: 82.22% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3370		|  488		|  87.35%
+predicted >50k	|  401		|  741		|  64.89%
+class recall	|  89.37%	|  60.29%
+
+runtime: 0 hours 17 minutes 3.95 seconds
+
+======================================================================
+
+Value of k: 13, accuracy: 82.54% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3390		|  492		|  87.33%
+predicted >50k	|  381		|  737		|  65.92%
+class recall	|  89.90%	|  59.97%
+
+runtime: 0 hours 17 minutes 10.83 seconds
+
+======================================================================
+
+Value of k: 15, accuracy: 82.46% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3390		|  496		|  87.24%
+predicted >50k	|  381		|  733		|  65.80%
+class recall	|  89.90%	|  59.64%
+
+runtime: 0 hours 16 minutes 46.90 seconds
+
+======================================================================
+
+Value of k: 17, accuracy: 82.82% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3401		|  489		|  87.43%
+predicted >50k	|  370		|  740		|  66.67%
+class recall	|  90.19%	|  60.21%
+
+runtime: 0 hours 16 minutes 44.47 seconds
+
+======================================================================
+
+Value of k: 19, accuracy: 82.70% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3401		|  495		|  87.29%
+predicted >50k	|  370		|  734		|  66.49%
+class recall	|  90.19%	|  59.72%
+
+runtime: 0 hours 17 minutes 23.08 seconds
+
+======================================================================
+
+Value of k: 21, accuracy: 82.34% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3399		|  511		|  86.93%
+predicted >50k	|  372		|  718		|  65.87%
+class recall	|  90.14%	|  58.42%
+
+runtime: 0 hours 17 minutes 37.29 seconds
+
+======================================================================
+
+Value of k: 23, accuracy: 82.54% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3400		|  502		|  87.13%
+predicted >50k	|  371		|  727		|  66.21%
+class recall	|  90.16%	|  59.15%
+
+runtime: 0 hours 18 minutes 2.33 seconds
+
+======================================================================
+
+Value of k: 25, accuracy: 82.76% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3406		|  497		|  87.27%
+predicted >50k	|  365		|  732		|  66.73%
+class recall	|  90.32%	|  59.56%
+
+runtime: 0 hours 17 minutes 4.71 seconds
+
+======================================================================
+
+Value of k: 27, accuracy: 82.86% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3413		|  499		|  87.24%
+predicted >50k	|  358		|  730		|  67.10%
+class recall	|  90.51%	|  59.40%
+
+runtime: 0 hours 17 minutes 9.45 seconds
+
+======================================================================
+
+Value of k: 29, accuracy: 82.90% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3413		|  497		|  87.29%
+predicted >50k	|  358		|  732		|  67.16%
+class recall	|  90.51%	|  59.56%
+
+runtime: 0 hours 17 minutes 9.73 seconds
+
+======================================================================
+
+Value of k: 31, accuracy: 82.66% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3405		|  501		|  87.17%
+predicted >50k	|  366		|  728		|  66.54%
+class recall	|  90.29%	|  59.24%
+
+runtime: 0 hours 17 minutes 32.22 seconds
+
+======================================================================
+
+Value of k: 33, accuracy: 82.82% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3408		|  496		|  87.30%
+predicted >50k	|  363		|  733		|  66.88%
+class recall	|  90.37%	|  59.64%
+
+runtime: 0 hours 16 minutes 11.61 seconds
+
+======================================================================
+
+Value of k: 35, accuracy: 82.86% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3411		|  497		|  87.28%
+predicted >50k	|  360		|  732		|  67.03%
+class recall	|  90.45%	|  59.56%
+
+runtime: 0 hours 18 minutes 4.86 seconds
+
+======================================================================
+
+Value of k: 37, accuracy: 82.96% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3417		|  498		|  87.28%
+predicted >50k	|  354		|  731		|  67.37%
+class recall	|  90.61%	|  59.48%
+
+runtime: 0 hours 17 minutes 15.70 seconds
+
+======================================================================
+
+Value of k: 39, accuracy: 82.54% 
+confusion matrix: 
+ 		|  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3404		|  506		|  87.06%
+predicted >50k	|  367		|  723		|  66.33%
+class recall	|  90.27%	|  58.83%
+
+runtime: 0 hours 17 minutes 0.90 seconds
+
+

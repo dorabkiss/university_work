@@ -14,7 +14,7 @@ def preprocess_datasets():
         y_test: Testing labels as Pandas Series.
     """
     # load data
-    train_data, test_data = loadData('data/adult.train.5fold.csv', 'data/test1.csv')
+    train_data, test_data = loadData('data/adult.train.5fold.csv', 'data/adult.test.csv')
     # clean data
     train_clean, test_clean = cleanData(train_data, test_data)
     # drop insignificant predictors
@@ -36,6 +36,36 @@ def preprocess_datasets():
     X_train, y_train, X_test, y_test = ohe_data(X_train, y_train, X_test, y_test)
 
     return X_train, y_train, X_test, y_test
+
+def printConfusionMatrix(k, accuracy, cm, file):
+    """
+    Print confusion matrix to txt file
+    Args:
+        k: the number of nearest neighbours considered for classification
+        accuracy: the accuracy of our model’s predictions
+        cm: the confusion matrix
+        file: destination file (txt)
+    """
+    true_0_pred_0 = cm[0][0]
+    true_0_pred_1 = cm[1][0]
+    true_1_pred_0 = cm[0][1]
+    true_1_pred_1 = cm[1][1]
+
+    #sensitivity = recall
+    class_precision0 = (true_0_pred_0/(true_0_pred_0+true_1_pred_0)) * 100
+    class_precision1 = (true_1_pred_1/(true_1_pred_1+true_0_pred_1)) * 100
+    class_recall0 = (true_0_pred_0/(true_0_pred_0+true_0_pred_1)) * 100 # Sensitivity
+    class_recall1 = (true_1_pred_1/(true_1_pred_1+true_1_pred_0)) * 100 # Specificity
+
+    print('=' * 70, file=file)
+    print('\nValue of k: {}, accuracy: {:.2f}% \n'
+    'confusion matrix: \n \t\t|  true <=50k \t|  true >50k \t|  class precision \n'
+    'predicted <=50k\t|  {:.0f}\t\t|  {:.0f}\t\t|  {:.2f}%\n'
+    'predicted >50k\t|  {:.0f}\t\t|  {:.0f}\t\t|  {:.2f}%\n'
+    'class recall\t|  {:.2f}%\t|  {:.2f}%\n'
+    .format(k, accuracy, cm[0][0], cm[0][1], class_precision0, cm[1][0], cm[1][1], 
+    class_precision1, class_recall0, class_recall1), file=file)
+    
 
 def main():
     """
@@ -59,37 +89,22 @@ def main():
         kNN(X_train, y_train, X_test, predictions, k)
         # calculate accuracy
         accuracy = getAccuracy(y_test, predictions)
-        # create confusiin matrix
+        # create confusion matrix
         cm = confMatrix(y_test, predictions)
-        true_0_pred_0 = cm[0][0]
-        true_0_pred_1 = cm[1][0]
-        true_1_pred_0 = cm[0][1]
-        true_1_pred_1 = cm[1][1]
-
-        # sensitivity = recall
-        class_precision0 = (true_0_pred_0/(true_0_pred_0+true_1_pred_0)) * 100
-        class_precision1 = (true_1_pred_1/(true_1_pred_1+true_0_pred_1)) * 100
-        class_recall0 = (true_0_pred_0/(true_0_pred_0+true_0_pred_1)) * 100 # Sensitivity
-        class_recall1 = (true_1_pred_1/(true_1_pred_1+true_1_pred_0)) * 100 # Specificity
-        
         # print accuracy and confusion matrix to file
-        print('\nValue of k: {}, accuracy: {:.2f}% \nconfusion matrix: \n \t\t'
-        '|  true <=50k \t|  true >50k \t|  class precision \n'
-        'predicted <=50k\t|  {:.0f}\t\t|  {:.0f}\t\t|  {:.2f}%\n'
-        'predicted >50k\t|  {:.0f}\t\t|  {:.0f}\t\t|  {:.2f}%\n'
-        'class recall\t|  {:.2f}%\t|  {:.2f}%\n'
-        .format(k, accuracy, true_0_pred_0, true_1_pred_0, class_precision0, true_0_pred_1, true_1_pred_1, 
-        class_precision1, class_recall0, class_recall1), file=text_file)
+        #printConfusionMatrix(k, accuracy, cm, text_file)
+        # Alternatively, if we just want to print the value of k and accuracy
+        print('-' * 35, file=text_file)
+        print(' Value of k: {}\t| accuracy: {:.2f}%'.format(k, accuracy), file=text_file)
         # calculate runtime (in seconds), convert it to hours, minutes and seconds
         total_runtime = (datetime.datetime.now() - start).total_seconds()
         hours, remainder = divmod(total_runtime, 3600)
         minutes, seconds = divmod(remainder, 60)
         # print the runtime to the text file
-        print('runtime: {:.0f} hours {:.0f} minutes {:.2f} seconds\n'.format(hours, minutes, seconds), file=text_file)
-        print('=' * 70, file=text_file)
-
+        #print('runtime: {:.0f} hours {:.0f} minutes {:.2f} seconds\n'.format(hours, minutes, seconds), file=text_file)
+        
     print('finished at', datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     # close the text file
     text_file.close()
-
+    
 main()
