@@ -4,15 +4,15 @@ Training data size: 10201
 test data size: 5000
 
 -----------------------------------
- Value of k: 1	| accuracy: 77.64%
+ Value of k: 1 	| accuracy: 77.64%
 -----------------------------------
- Value of k: 3	| accuracy: 80.38%
+ Value of k: 3 	| accuracy: 80.38%
 -----------------------------------
- Value of k: 5	| accuracy: 81.46%
+ Value of k: 5	 | accuracy: 81.46%
 -----------------------------------
- Value of k: 7	| accuracy: 82.40%
+ Value of k: 7 	| accuracy: 82.40%
 -----------------------------------
- Value of k: 9	| accuracy: 82.06%
+ Value of k: 9 	| accuracy: 82.06%
 -----------------------------------
  Value of k: 11	| accuracy: 82.22%
 -----------------------------------
@@ -46,15 +46,16 @@ test data size: 5000
 
 ======================================================================
 
-BEST ACCURACY AT K=37 82.96%
+BEST ACCURACY AT K = 37 82.96%
 
 ======================================================================
 
 Value of k: 37, accuracy: 82.96% 
+
 confusion matrix: 
- 		|  true <=50k 	|  true >50k 	|  class precision 
-predicted <=50k	|  3417		|  498		|  87.28%
-predicted >50k	|  354		|  731		|  67.37%
-class recall	|  90.61%	|  59.48%
+ 		             |  true <=50k 	|  true >50k 	|  class precision 
+predicted <=50k	|  3417		      |  498	      	|  87.28%
+predicted >50k 	|  354		       |  731	      	|  67.37%
+class recall   	|  90.61%     	|  59.48%
 
 runtime: 0 hours 17 minutes 15.70 seconds
