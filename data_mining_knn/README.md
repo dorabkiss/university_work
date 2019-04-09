@@ -1,4 +1,6 @@
-# Income prediction using kNN algorithm (Python)
+# data mining
+
+### Income prediction using kNN algorithm (Python)
 
 
 **Description**

@@ -1,7 +1,14 @@
-# The mytwits app is a mock twitter application built with flask (microframework for Python).
+# The mytwits app is a simple twitter clone
+A web application built with the Flask microframework that has user authentication (flask-login), a MySQL database backend that implements CRUD operations, and a basic API that supports get, post, push, and delete.
 
+### Tools: 
+- jinja template engine
+- wtforms
+- flask-login: user authentication
+- flask-restful: basic api
+- sqlalchemy
 
-## Features:
+### Features:
 **there is more than one route and more than one view**
 
 - routes: /login, /logout, /register, /edit twit, /add_twit, /<username>
